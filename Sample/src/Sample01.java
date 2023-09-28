@@ -19,6 +19,7 @@ public class Sample01 {
         // 1日の秒数 = 24時間 x 60分 x 60秒
         int ichiniti_no_byousuu = 24 * 60 * 60;    // * は 掛け算を意味する記号
         System.out.println(ichiniti_no_byousuu);
+
     }
 
 }
