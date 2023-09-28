@@ -5,30 +5,22 @@ public class ArithmeticOperations {
         int num1 = 100; // int型変数num1を宣言し、100を代入
         int num2 = 10; // int型変数num2を宣言し、10を代入
 
-        // int型変数result1を宣言し、num1とnum2の加算結果を代入
-        int result1 = num1 + num2;
-        // 加算結果を出力
-        System.out.println("num1 + num2 = " + result1);
+        // 5つの計算結果を格納するための配列を宣言・初期化
+        int[] results = new int[5];
 
-        // int型変数result2を宣言し、num1とnum2の減算結果を代入
-        int result2 = num1 - num2;
-        // 減算結果を出力
-        System.out.println("num1 - num2 = " + result2);
+        // 各計算結果を配列に格納
+        results[0] = num1 + num2;
+        results[1] = num1 - num2;
+        results[2] = num1 * num2;
+        results[3] = num1 / num2;
+        results[4] = num1 % num2;
 
-        // int型変数result3を宣言し、num1とnum2の乗算結果を代入
-        int result3 = num1 * num2;
-        // 乗算結果を出力
-        System.out.println("num1 * num2 = " + result3);
-
-        // int型変数result4を宣言し、num1とnum2の除算結果を代入
-        int result4 = num1 / num2;
-        // 除算結果を出力
-        System.out.println("num1 / num2 = " + result4);
-
-        // int型変数result5を宣言し、num1とnum2の剰余算結果を代入
-        int result5 = num1 % num2;
-        // 剰余算結果を出力
-        System.out.println("num1 % num2 = " + result5);
+     // 各計算結果を出力
+        System.out.println("num1 + num2 = " + results[0]);
+        System.out.println("num1 - num2 = " + results[1]);
+        System.out.println("num1 * num2 = " + results[2]);
+        System.out.println("num1 / num2 = " + results[3]);
+        System.out.println("num1 % num2 = " + results[4]);
 
     }
 
