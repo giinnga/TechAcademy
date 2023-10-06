@@ -5,6 +5,13 @@ public class Employee {
     public String divisionName;   //部署名
     public int vitality;
 
+    public Employee() {
+        System.out.println("インスタンス化時にコンストラクタが呼ばれました");
+        employeeName = "未設定";
+        divisionName = "営業部";
+        vitality = 0;
+    }
+
 
     //自己紹介メソッド
     public void introduce() {
