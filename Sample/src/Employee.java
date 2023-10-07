@@ -7,13 +7,27 @@ public class Employee {
 
     //引数なしのコンストラクタ
     public Employee() {
-        System.out.println("インスタンス化時にコンストラクタが呼ばれました");
-        employeeName = "未設定";
-        divisionName = "営業部";
-        vitality = 0;
+        this("未設定です");
+        System.out.println("引数なしコンストラクタを終了しました");
+        //System.out.println("インスタンス化時にコンストラクタが呼ばれました");
+        //employeeName = "未設定";
+        //divisionName = "営業部";
+        //vitality = 0;
     }
 
-    //引数が3つあるコンストラクタ
+    //String型引数1つがあるコンストラクタ
+    public Employee(String employeeName) {
+        this(employeeName, "営業部");
+        System.out.println("String型引数が1つあるコンストラクタを終了しました");
+    }
+
+  //String型引数2つがあるコンストラクタ
+    public Employee(String employeeName, String divisionName) {
+        this(employeeName, divisionName, 150);
+        System.out.println("String型引数が2つあるコンストラクタを終了しました");
+    }
+
+    //String型引数2つ,int型引数1つあるコンストラクタ
     public Employee(String employeeName, String divisionName, int vitality) {
         System.out.println("インスタンス化時に引数ありコンストラクタが呼ばれました");
         this.employeeName = employeeName;
