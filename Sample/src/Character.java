@@ -1,10 +1,10 @@
 
 public class Character {
     //フィールド
-    public String name;     //キャラクター名
-    public int hp;          //ヒットポイント(HP)
-    public int offense;     //攻撃力
-    public int defense;     //防御力
+    private String name;     //キャラクター名
+    private int hp;          //ヒットポイント(HP)
+    private int offense;     //攻撃力
+    private int defense;     //防御力
 
     //引数なしのコンストラクタ
     public Character() {
@@ -33,5 +33,38 @@ public class Character {
             System.out.println("ミス！" + this.name + "は" + opponent.name + "にダメージを与えられない！");
         }
 
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public int getOffense() {
+        return offense;
+    }
+
+    public void setOffense(int offense) {
+        this.offense = offense;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
     }
 }
