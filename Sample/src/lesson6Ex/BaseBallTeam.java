@@ -1,12 +1,11 @@
 package lesson6Ex;
 
-public class BaseBallTeam extends BaseBallGame {
+public class BaseBallTeam {
 
     private String name;
     private int win;
     private int lose;
     private int draw;
-    private double result;
 
 
     public BaseBallTeam() {
@@ -18,16 +17,14 @@ public class BaseBallTeam extends BaseBallGame {
         this.win = win;
         this.lose = lose;
         this.draw = draw;
-        this.result = result;
     }
 
-    public double getRate(int win, int lose) {
-        double result = (double)(win/(win + lose));
-        return result;
+    public double getRate() {
+        return (double)win/(win + lose);
     }
 
     public void report() {
-        System.out.println(name + "の2019年の成績は" + win + "勝" + lose + "負" + draw + "分" + "勝率は" + result + "です");
+        System.out.println(name + "の2019年の成績は" + win + "勝" + lose + "負" + draw + "分" + "勝率は" + getRate() + "です");
 
     }
     public String getName() {
@@ -60,14 +57,6 @@ public class BaseBallTeam extends BaseBallGame {
 
     public void setDraw(int draw) {
         this.draw = draw;
-    }
-
-    public double getResult() {
-        return result;
-    }
-
-    public void setResult(double result) {
-        this.result = result;
     }
 
 }
