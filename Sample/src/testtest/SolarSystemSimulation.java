@@ -13,6 +13,11 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
     private double angle1 = 0;
     private double angle2 = 0;
     private double angle3 = 0;
+    private double angle4 = 0;
+    private double angle5 = 0;
+    private double angle6 = 0;
+    private double angle7 = 0;
+    private double angle8 = 0;
 
     @Override
     protected void paintComponent(Graphics g) {
@@ -34,28 +39,60 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
         angle1 += 0.05;
 
      // 惑星を描画
-        int planetC = (int) (centerX + 120 * Math.cos(angle2));
-        int planetD = (int) (centerY + 120 * Math.sin(angle2));
+        int planetC = (int) (centerX + 110 * Math.cos(angle2));
+        int planetD = (int) (centerY + 110 * Math.sin(angle2));
         g.setColor(Color.YELLOW);
         g.fillOval(planetC - 18, planetD - 18, 18, 18);
 
         angle2 += 0.01;
 
         // 惑星を描画
-        int planetE = (int) (centerX + 200 * Math.cos(angle3));
-        int planetF = (int) (centerY + 200 * Math.sin(angle3));
+        int planetE = (int) (centerX + 150 * Math.cos(angle3));
+        int planetF = (int) (centerY + 150 * Math.sin(angle3));
         g.setColor(Color.BLUE);
         g.fillOval(planetE - 20, planetF - 20, 20, 20);
 
         angle3 += 0.008;
 
-     // 惑星を描画
-        int planetG = (int) (centerX + 250 * Math.cos(angle3));
-        int planetH = (int) (centerY + 250 * Math.sin(angle3));
+        // 惑星を描画
+        int planetG = (int) (centerX + 180 * Math.cos(angle4));
+        int planetH = (int) (centerY + 180 * Math.sin(angle4));
         g.setColor(Color.RED);
         g.fillOval(planetG - 14, planetH - 14, 14, 14);
 
-        angle3 += 0.006;
+        angle4 += 0.006;
+
+        // 惑星を描画
+        int planetI = (int) (centerX + 230 * Math.cos(angle5));
+        int planetJ = (int) (centerY + 230 * Math.sin(angle5));
+        g.setColor(Color.ORANGE);
+        g.fillOval(planetI - 40, planetJ - 40, 40, 40);
+
+        angle5 += 0.003;
+
+        // 惑星を描画
+        int planetK = (int) (centerX + 270 * Math.cos(angle6));
+        int planetL = (int) (centerY + 270 * Math.sin(angle6));
+        g.setColor(Color.MAGENTA);
+        g.fillOval(planetK - 30, planetL - 30, 30, 30);
+
+        angle6 += 0.002;
+
+        // 惑星を描画
+        int planetM = (int) (centerX + 330 * Math.cos(angle7));
+        int planetN = (int) (centerY + 330 * Math.sin(angle7));
+        g.setColor(Color.CYAN);
+        g.fillOval(planetM - 25, planetN - 25, 25, 25);
+
+        angle7 += 0.001;
+
+        // 惑星を描画
+        int planetO = (int) (centerX + 370 * Math.cos(angle8));
+        int planetP = (int) (centerY + 370 * Math.sin(angle8));
+        g.setColor(Color.BLUE);
+        g.fillOval(planetO - 24, planetP - 24, 24, 24);
+
+        angle8 += 0.0008;
     }
 
     @Override
