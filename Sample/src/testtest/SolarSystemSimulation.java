@@ -44,7 +44,7 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
         g.setColor(Color.YELLOW);
         g.fillOval(planetC - 18, planetD - 18, 18, 18);
 
-        angle2 += 0.01;
+        angle2 += 0.04;
 
         // 惑星を描画
         int planetE = (int) (centerX + 150 * Math.cos(angle3));
@@ -52,7 +52,7 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
         g.setColor(Color.BLUE);
         g.fillOval(planetE - 20, planetF - 20, 20, 20);
 
-        angle3 += 0.008;
+        angle3 += 0.03;
 
         // 惑星を描画
         int planetG = (int) (centerX + 180 * Math.cos(angle4));
@@ -60,7 +60,7 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
         g.setColor(Color.RED);
         g.fillOval(planetG - 14, planetH - 14, 14, 14);
 
-        angle4 += 0.006;
+        angle4 += 0.026;
 
         // 惑星を描画
         int planetI = (int) (centerX + 230 * Math.cos(angle5));
@@ -68,7 +68,7 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
         g.setColor(Color.ORANGE);
         g.fillOval(planetI - 40, planetJ - 40, 40, 40);
 
-        angle5 += 0.003;
+        angle5 += 0.007;
 
         // 惑星を描画
         int planetK = (int) (centerX + 270 * Math.cos(angle6));
@@ -76,7 +76,7 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
         g.setColor(Color.MAGENTA);
         g.fillOval(planetK - 30, planetL - 30, 30, 30);
 
-        angle6 += 0.002;
+        angle6 += 0.005;
 
         // 惑星を描画
         int planetM = (int) (centerX + 330 * Math.cos(angle7));
@@ -84,7 +84,7 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
         g.setColor(Color.CYAN);
         g.fillOval(planetM - 25, planetN - 25, 25, 25);
 
-        angle7 += 0.001;
+        angle7 += 0.004;
 
         // 惑星を描画
         int planetO = (int) (centerX + 370 * Math.cos(angle8));
@@ -92,7 +92,7 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
         g.setColor(Color.BLUE);
         g.fillOval(planetO - 24, planetP - 24, 24, 24);
 
-        angle8 += 0.0008;
+        angle8 += 0.002;
     }
 
     @Override
@@ -104,7 +104,7 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
         JFrame frame = new JFrame("Solar System Simulation");
         SolarSystemSimulation simulation = new SolarSystemSimulation();
         frame.add(simulation);
-        frame.setSize(800, 800);
+        frame.setSize(1600, 1600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
