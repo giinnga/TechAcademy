@@ -18,6 +18,7 @@ public class SolarSystemSimulation extends JPanel implements ActionListener {
     private double angle6 = 0;
     private double angle7 = 0;
     private double angle8 = 0;
+    private double angle9 = 0;
 
     @Override
     protected void paintComponent(Graphics g) {
